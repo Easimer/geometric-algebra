@@ -5,6 +5,7 @@
   "license": "UNLICENSED",
   "type": "module",
   "sideEffects": false,
+  "repository": "https://github.com/Easimer/geometric-algebra",
   "main": "./build/main.cjs",
   "module": "./build/main.mjs",
   "types": "./build/main.d.cts",

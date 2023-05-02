@@ -17,11 +17,8 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.21.5",
-    "@babel/preset-env": "^7.21.5",
     "@rollup/plugin-typescript": "^11.1.0",
-    "@types/three": "^0.126.0",
-    "babel-loader": "^9.1.2",
+    "@types/three": ">0.126",
     "eslint": "^8.39.0",
     "rollup": "^3.21.3",
     "rollup-plugin-ts": "^3.2.0",
@@ -30,7 +27,7 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "three": "^0.126.0"
+    "three": ">0.126"
   },
   "scripts": {
     "build": "rollup --config --sourcemap"

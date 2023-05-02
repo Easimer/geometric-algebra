@@ -2,7 +2,7 @@
   "name": "@protostr/geometric-algebra",
   "author": "protostr",
   "version": "0.1.0",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "type": "module",
   "sideEffects": false,
   "repository": "https://github.com/Easimer/geometric-algebra",

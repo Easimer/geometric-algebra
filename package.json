@@ -1,0 +1,37 @@
+{
+  "name": "@protostr/geometric-algebra",
+  "author": "protostr",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./build/main.cjs",
+  "module": "./build/main.mjs",
+  "types": "./build/main.d.cts",
+  "exports": {
+    ".": {
+      "import": "./build/main.mjs",
+      "require": "./build/main.cjs",
+      "types": "./build/main.d.mts"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/three": "^0.126.0",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.39.0",
+    "rollup": "^3.21.3",
+    "rollup-plugin-ts": "^3.2.0",
+    "ts-loader": "^9.4.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "three": "^0.126.0"
+  },
+  "scripts": {
+    "build": "rollup --config --sourcemap"
+  }
+}

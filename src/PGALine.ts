@@ -1,5 +1,6 @@
 import { Vector3 } from "three";
 import { PGAPoint } from "./PGAPoint";
+import { PGAPlane } from "./PGAPlane";
 
 export class PGALine {
     private constructor(
@@ -24,6 +25,17 @@ export class PGALine {
             p.y * q.z - p.z * q.y,
             p.z * q.x - p.x * q.z,
             p.x * q.y - p.y * q.x,
+        );
+    }
+
+    static fromIntersectionOfTwoPlanes(f: PGAPlane, g: PGAPlane) {
+        return new PGALine(
+            f.z * g.y - f.y * g.z,
+            f.x * g.z - f.z * g.x,
+            f.y * g.x - f.x * g.y,
+            f.x * g.w - g.x * f.w,
+            f.y * g.w - g.y * f.w,
+            f.z * g.w - g.z * f.w,
         );
     }
 }

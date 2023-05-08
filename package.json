@@ -18,11 +18,17 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
     "@types/three": ">0.126",
+    "chai": "^4.3.7",
     "eslint": "^8.39.0",
+    "mocha": "^10.2.0",
     "rollup": "^3.21.3",
     "rollup-plugin-ts": "^3.2.0",
     "ts-loader": "^9.4.2",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
   },
@@ -30,6 +36,7 @@
     "three": ">=0.126"
   },
   "scripts": {
-    "build": "rollup --config --sourcemap"
+    "build": "rollup --config --sourcemap",
+    "test": "ts-mocha -p ./tsconfig.test.json src/**/*.spec.ts"
   }
 }
